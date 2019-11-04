@@ -28,11 +28,19 @@ aTag.forEach((object)=> {
     });
   });
 
-        // Alternate code 
-            // function eachTag(object) {
-            //     object.addEventListener('dblclick', (object)=>{
-            //             object.target.style.color = 'blue';
-            //     });
-            //   }
+// Alternate code 
+    // function eachTag(object) {
+    //     object.addEventListener('dblclick', (object)=>{
+    //             object.target.style.color = 'blue';
+    //     });
+    //   }
 
-            // aTag.forEach(eachTag);
+    // aTag.forEach(eachTag);
+
+// Resize
+const resize = document.querySelector('.content-destination img');
+
+window.addEventListener('resize', function(){
+   resize.src = 'img/fun-bus.jpg';
+});
+
